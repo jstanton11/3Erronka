@@ -1,0 +1,37 @@
+
+.donatuGaldetegia {
+  padding: 30px;
+  margin-left: 50px;
+  width: 700px;
+  margin-top: 40px;
+}
+#donatuBot {
+  background-color: #D0021B;
+  color: white;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+}
+
+#argazkia {
+  height: 100vh;
+  object-fit: cover;
+  object-position: right;
+}
+
+@media (max-width: 800px) {
+  .argazkia {
+    display: none;
+  }
+
+  .donatu {
+    justify-content: center;
+  }
+
+  .donatuGaldetegia {
+    margin-left: 0;
+  }
+
+}
+
+

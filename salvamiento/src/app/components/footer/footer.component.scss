@@ -1,0 +1,17 @@
+$secondary: #002F6C;
+
+.footer {
+  background-color: $secondary;
+  color: white;
+
+  .bi {
+    font-size: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+

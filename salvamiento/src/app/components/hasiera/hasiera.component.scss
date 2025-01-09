@@ -1,0 +1,66 @@
+.imgPrincipal{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../../assets/img/fondoGeneral.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width:30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    color: white;
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay-titulo {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .overlay-descripcion {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: justify;
+  }
+
+  @media (max-width:992px) {
+    .overlay{
+      width:35%;
+    }
+    .overlay-titulo{
+      font-size: 1.5rem;
+    }
+    .overlay-descripcion{
+      font-size: 1rem;
+    }
+  }
+  @media (max-width:800px) {
+    .overlay{
+      width:45%;
+    }
+    .overlay-titulo{
+      font-size: 1.2rem;
+    }
+    .overlay-descripcion{
+      font-size: 1rem;
+      text-align: center;
+    }
+  }

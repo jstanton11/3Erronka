@@ -1,0 +1,49 @@
+.kontaktua {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galdetegia {
+  width: 700px;
+  padding: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+h3 {
+  margin-bottom: 40px;
+}
+
+.bidaliBot {
+  text-align: center;
+}
+
+#bidaliBot {
+  background-color: #D0021B;
+  color: white;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  margin-top: 20px;
+}
+
+#argazkia {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .argazkiaKontaktua {
+    display: none;
+  }
+
+  .kontaktua {
+    justify-content: center;
+  }
+
+  .galdetegia {
+    margin-right: 0;
+  }
+
+}
