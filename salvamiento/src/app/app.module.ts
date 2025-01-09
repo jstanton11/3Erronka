@@ -9,6 +9,7 @@ import { ErreskateakComponent } from './components/erreskateak/erreskateak.compo
 import { DonatuComponent } from './components/donatu/donatu.component';
 import { KontaktuaComponent } from './components/kontaktua/kontaktua.component';
 import { GuriBuruzComponent } from './components/guri-buruz/guri-buruz.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GuriBuruzComponent } from './components/guri-buruz/guri-buruz.component
     ErreskateakComponent,
     DonatuComponent,
     KontaktuaComponent,
-    GuriBuruzComponent
+    GuriBuruzComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
