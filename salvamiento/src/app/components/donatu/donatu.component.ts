@@ -14,10 +14,10 @@ export class DonatuComponent {
 
   onSubmit(form: any): void {
     if (form.valid) {
-      console.log('Formulario enviado con éxito', form.value);
-      // Aquí puedes realizar cualquier acción adicional, como enviar los datos a un servidor.
+      console.log('Galdetegia ondo bidali da!', form.value);
+
     } else {
-      console.log('Formulario no válido');
+      console.log('Errorea galdetegia bidaltzerakoan!');
     }
   }
 }

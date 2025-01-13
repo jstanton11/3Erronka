@@ -31,6 +31,10 @@
   overflow-y: auto;
 }
 
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 h1 {
   font-size: 50px;
   font-weight: bold;
@@ -47,7 +51,7 @@ p {
   font-size: 20px;
 }
 
-
+// RESPONSIVE
 @media (max-width: 1166px) {
   .overlay {
     width: 60%;
@@ -73,7 +77,7 @@ p {
     width: 70%;
     padding: 25px;
     height: 100%;
-    max-height: none; 
+    max-height: none;
   }
 }
 

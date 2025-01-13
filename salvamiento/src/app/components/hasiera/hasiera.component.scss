@@ -26,6 +26,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      .overlay-titulo {
+        font-size: 2rem;
+      }
+
+      .overlay-descripcion {
+        font-size: 1.4rem;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      border: 5px solid rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
   }
 
   .overlay-titulo {
@@ -41,6 +62,59 @@
     text-align: justify;
   }
 
+  //CARDS
+  .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+    border: solid 0.5px rgb(210, 208, 223);
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+
+      p{
+        color:#000000;
+      }
+
+    }
+    }
+
+  .card h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #D0021B;
+    margin-bottom: 10px;
+
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+
+  }
+
+
+
+  .img-fluid {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+    height: auto;
+    transition: color 0.3s ease;
+  }
+
+
+
+// RESPONSIVE
   @media (max-width:992px) {
     .overlay{
       width:35%;
@@ -55,6 +129,16 @@
   @media (max-width:800px) {
     .overlay{
       width:45%;
+
+      &:hover {
+        .overlay-titulo {
+          font-size: 1.4rem;
+        }
+
+        .overlay-descripcion {
+          font-size: 1.2rem;
+        }
+      }
     }
     .overlay-titulo{
       font-size: 1.2rem;
