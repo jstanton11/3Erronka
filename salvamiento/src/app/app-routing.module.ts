@@ -6,6 +6,7 @@ import { ErreskateakComponent } from './components/erreskateak/erreskateak.compo
 import { DonatuComponent } from './components/donatu/donatu.component';
 import { KontaktuaComponent } from './components/kontaktua/kontaktua.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
     { path: "", redirectTo: "hasiera", pathMatch: "full" },
@@ -14,8 +15,7 @@ const routes: Routes = [
     { path: "donatu", component: DonatuComponent },
     { path: "guriBuruz", component: GuriBuruzComponent },
     { path: "kontaktua", component: KontaktuaComponent },
-    { path: "admin", component: AdminComponent },
-
+    { path: 'admin', component: AdminComponent, canActivate: [authGuard] },
 ];
 
 @NgModule({
