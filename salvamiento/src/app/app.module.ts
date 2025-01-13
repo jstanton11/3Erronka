@@ -10,6 +10,7 @@ import { DonatuComponent } from './components/donatu/donatu.component';
 import { KontaktuaComponent } from './components/kontaktua/kontaktua.component';
 import { GuriBuruzComponent } from './components/guri-buruz/guri-buruz.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
     DonatuComponent,
     KontaktuaComponent,
     GuriBuruzComponent,
-    FooterComponent
+    FooterComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
