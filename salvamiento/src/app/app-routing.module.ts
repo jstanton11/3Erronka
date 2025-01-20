@@ -1,3 +1,4 @@
+import { GureGaleriaComponent } from './components/gure-galeria/gure-galeria.component';
 import { GuriBuruzComponent } from './components/guri-buruz/guri-buruz.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: "erreskateak", component: ErreskateakComponent },
     { path: "donatu", component: DonatuComponent },
     { path: "guriBuruz", component: GuriBuruzComponent },
+    { path: "gureGaleria", component: GureGaleriaComponent},
     { path: "kontaktua", component: KontaktuaComponent },
     { path: 'admin', component: AdminComponent, canActivate: [authGuard] },
 ];

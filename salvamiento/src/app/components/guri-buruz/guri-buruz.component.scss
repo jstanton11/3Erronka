@@ -1,3 +1,10 @@
+//Kolore nagusiak
+$primary:  #002F6C ;
+$secondary: #D0021B;
+$tertiary: #4A90E2;
+
+
+//Irudi nagusiaren estiloa(fondoa)
 .image-container {
   position: relative;
   width: 100%;
@@ -12,6 +19,7 @@
   object-fit: cover;
 }
 
+//Irudiaren gainean dagoen geruzaren estiloa
 .overlay {
   position: absolute;
   top: 0;
@@ -37,6 +45,7 @@
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+//Textuen estiloa
 h1 {
   font-size: 50px;
   font-family: Marcellus;
@@ -55,7 +64,7 @@ p {
   font-size: 20px;
 }
 
-// RESPONSIVE
+//PANTAILA TXIKIENTZAKO ESTILO ALDAKETAK
 @media (max-width: 1500px) {
   .overlay {
     width: 50%;

@@ -1,0 +1,30 @@
+//Kolore nagusiak
+$primary:  #002F6C ;
+$secondary: #D0021B;
+$tertiary: #4A90E2;
+
+h1 {
+  font-size: 50px;
+  font-family: Marcellus;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.videoaC {
+  position: relative; /* Posicionamiento relativo para contener el iframe */
+  width: 100%;        /* El contenedor ocupa el 100% del ancho disponible */
+  height: 100%;       /* La altura se ajustará proporcionalmente */
+  overflow: hidden;   /* Oculta cualquier contenido fuera del contenedor */
+}
+
+/* Estilo del iframe */
+.videoa {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 20px;
+}
+
+

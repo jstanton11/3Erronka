@@ -1,22 +1,32 @@
-$secondary: #002F6C;
+//Kolore nagusiak
+$primary:  #002F6C ;
+$secondary: #D0021B;
+$tertiary: #4A90E2;
 
+//FOOTER atalaren estiloa
 .footer {
-  background-color: $secondary;
+  background-color: $primary;
   color: white;
 }
+
+//Ikonoen estiloa
 .bi {
   font-size: 1.5rem;
   transition: transform 0.2s ease-in-out;
 
   &:hover {
-    color: #D0021B;
+    color: $secondary;
   }
 }
+
+//Ikonoen itzala
 .custom-shadow{
   &:hover{
   filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.829));
   }
 }
+
+//Ikonoen eskala
 .scale-icon{
   display: inline-block;
   transform: scale(1);

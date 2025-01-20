@@ -1,3 +1,9 @@
+//Kolore nagusiak
+$primary:  #002F6C ;
+$secondary: #D0021B;
+$tertiary: #4A90E2;
+
+//Irudi nagusiaren estiloa(fondoa)
 .imgPrincipal{
     position: relative;
     height: 100vh;
@@ -10,6 +16,7 @@
     padding: 0;
   }
 
+//Irudiaren gainean dagoen geruzaren estiloa
   .overlay {
     position: absolute;
     top: 50%;
@@ -53,6 +60,7 @@
     }
   }
 
+  //Irudiaren gainean dagoen geruzaren tituluaren estiloak
   .overlay-titulo {
     font-family: Marcellus;
     font-size: 2.2rem;
@@ -60,34 +68,39 @@
     font-weight: bold;
     text-align: center;
   }
-
+  //Irudiaren gainean dagoen geruzaren deskripzioaren estiloak
   .overlay-descripcion {
     font-size: 1.6rem;
     margin-top: 1rem;
     text-align: justify;
   }
 
+  //Marqueea
+  article{
+    margin-bottom: -6px;
+  }
+
   marquee{
-    background-color: #002F6C;
+    background-color: $primary;
     color: white;
     height: 40px;
     font-size: 25px;
    text-align: center;
   }
 
-  //CARDS
+  //CARD-ak
   .card {
     display: block;
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 40px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-    border: solid 3px #4A90E2;
+    border: solid 3px $tertiary;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 
     &:hover {
       transform: scale(1.02);
-      box-shadow: 0 2px 20px #002F6C;
+      box-shadow: 0 2px 20px $primary;
 
       h3{
         font-size: 2rem;
@@ -102,15 +115,17 @@
     }
   }
 
+  //Carden titulua
   .card h3 {
     font-family: Marcellus;
     font-size: 1.8rem;
     font-weight: bolder;
-    color: #D0021B;
+    color: $secondary;
     margin-bottom: 10px;
 
   }
 
+  //Carden deskripzioa
   .card p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -118,6 +133,13 @@
     margin: 0;
   }
 
+  a {
+    text-decoration: none;
+    height: auto;
+    transition: color 0.3s ease;
+  }
+
+  //Carden argazkien estiloa
   .cardArgazkiak{
     // height: 248px;
     // width: auto;
@@ -134,15 +156,80 @@
     object-position: center;
   }
 
-  a {
-    text-decoration: none;
-    height: auto;
-    transition: color 0.3s ease;
+
+  //CARROUSEL-aren diseinua
+  .section3 {
+    width: 100%;
+    height: 600px;
+
+    //Carousel item-en estiloa
+    .carousel-fade .carousel-inner .carousel-item {
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .carousel-fade .carousel-inner .carousel-item.active {
+      opacity: 1;
+    }
+
+    .carousel-indicators {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .carousel-indicators li {
+      background-color: #ffffff;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .carousel-indicators li::marker {
+      display: none;
+    }
+
+    // Carousel-aren argazkien estiloa
+    .carousel-item {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 600px;
+    }
+
+    //Item bakoitzaren fondo argazkiak
+    .carousel-item:nth-child(1) {
+      background-image: url('../../../assets/img/carrousel01.jpg');
+    }
+
+    .carousel-item:nth-child(2) {
+      background-image: url('../../../assets/img/carrousel02.jpg');
+    }
+
+    .carousel-item:nth-child(3) {
+      background-image: url('../../../assets/img/carrousel03.jpg');
+    }
+
+    .carousel-item:nth-child(4) {
+      background-image: url('../../../assets/img/carrousel04.jpg');
+    }
+
+    .carousel-item:nth-child(5) {
+      background-image: url('../../../assets/img/carrousel05.jpg');
+    }
+
+    .carousel-item:nth-child(6) {
+      background-image: url('../../../assets/img/carrousel06.jpg');
+    }
   }
 
 
-
-// RESPONSIVE
+//PANTAILA TXIKIENTZAKO ESTILO ALDAKETAK
   @media (max-width:1500px) {
     .overlay{
       width:35%;

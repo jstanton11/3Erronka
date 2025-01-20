@@ -11,6 +11,8 @@ import { KontaktuaComponent } from './components/kontaktua/kontaktua.component';
 import { GuriBuruzComponent } from './components/guri-buruz/guri-buruz.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { GureGaleriaComponent } from './components/gure-galeria/gure-galeria.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { AdminComponent } from './components/admin/admin.component';
     KontaktuaComponent,
     GuriBuruzComponent,
     FooterComponent,
-    AdminComponent
+    AdminComponent,
+    GureGaleriaComponent
   ],
   imports: [
     BrowserModule,

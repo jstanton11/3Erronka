@@ -29,8 +29,8 @@
       <div class="mb-3 parametros">
         <label for="kantitatea" class="form-label">Kantitatea:</label>
         <input type="number" class="form-control" id="kantitatea" name="kantitatea" required
-          [(ngModel)]="kantitatea" #kantitateaModel="ngModel" pattern="^\d+(\.\d{1,2})?$">
-        <div *ngIf="kantitateaModel.invalid && kantitateaModel.touched" class="text-danger">
+          [(ngModel)]="kantitatea" #kantitateaModel="ngModel" pattern="^\d+(\.\d{1,2})?$" min="0"min="0">
+        <div *ngIf="kantitateaModel.invalid && kantitateaModel.touched" class="text-danger" >
           Kantitatea zenbaki bat izan behar da, gehienez 2 hamartarrekin!
         </div>
       </div>

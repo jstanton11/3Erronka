@@ -1,9 +1,15 @@
+//Kolore nagusiak
+$primary:  #002F6C ;
+$secondary: #D0021B;
+$tertiary: #4A90E2;
 
+//Tituluaren diseinua
 h3{
   font-family: Marcellus, bold;
   font-size: 50px;
 }
 
+//DONATU atalaren estiloa
 .donatu{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -11,6 +17,7 @@ h3{
   justify-items: center;
 }
 
+//GALDETEGIA
 .donatuGaldetegia {
   display: grid;
   align-items: center;
@@ -22,8 +29,9 @@ h3{
   margin: 20px;
 }
 
+//Donatzeko botoiaren estiloa
 #donatuBot {
-  background-color: #D0021B !important;
+  background-color: $secondary !important;
   color: white;
   font-size: 30px;
   border-radius: 8px;
@@ -36,30 +44,34 @@ h3{
   margin: 20px;
 }
 
+//Etiketaren estiloa
 .form-label{
   font-size: 25px;
 }
 
+//Sarrera eta testu-arearen diseinua
 input, textarea{
-  border: solid 2px #4A90E2;
+  border: solid 2px $tertiary;
   height: 50px;
   &:hover{
-    box-shadow: 0 0 13px #4A90E2 ;
-    border-color: #002F6C;
+    box-shadow: 0 0 13px $tertiary ;
+    border-color: $primary;
   }
   &:focus{
     background-color: #fff;
-    border-color: #002F6C;
+    border-color: $primary;
     outline: none;
-    box-shadow: 0 0 13px #4A90E2 ;
+    box-shadow: 0 0 13px $tertiary ;
     scale: 1.1;
   }
 }
 
+//Parametroen arteko tartea
 .parametros{
   padding: 10px;
 }
 
+//ARGAZKIAREN diseinua
 .argazkia{
   grid-column-start: 2;
   grid-column-end: 3;
@@ -80,6 +92,7 @@ input, textarea{
   height: 100%;
 }
 
+//PANTAILA TXIKIENTZAKO ESTILO ALDAKETAK
 @media (max-width: 800px) {
   .argazkia {
     display: none;
