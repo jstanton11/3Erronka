@@ -1,22 +1,83 @@
 
-.donatuGaldetegia {
-  padding: 30px;
-  margin-left: 50px;
-  width: 700px;
-  margin-top: 40px;
+h3{
+  font-family: Marcellus, bold;
+  font-size: 50px;
 }
+
+.donatu{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+.donatuGaldetegia {
+  display: grid;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 100%;
+  width: 80%;
+  padding:20px;
+  margin: 20px;
+}
+
 #donatuBot {
-  background-color: #D0021B;
+  background-color: #D0021B !important;
   color: white;
+  font-size: 30px;
   border-radius: 8px;
-  width: 100px;
-  height: 45px;
+  width: 200px;
+  min-width: 100px;
+  height: 70px;
+  opacity: 1;
+  filter: none;
+  box-shadow: none;
+  margin: 20px;
+}
+
+.form-label{
+  font-size: 25px;
+}
+
+input, textarea{
+  border: solid 2px #4A90E2;
+  height: 50px;
+  &:hover{
+    box-shadow: 0 0 13px #4A90E2 ;
+    border-color: #002F6C;
+  }
+  &:focus{
+    background-color: #fff;
+    border-color: #002F6C;
+    outline: none;
+    box-shadow: 0 0 13px #4A90E2 ;
+    scale: 1.1;
+  }
+}
+
+.parametros{
+  padding: 10px;
+}
+
+.argazkia{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #argazkia {
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   object-position: right;
+}
+
+.img-fluid {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 @media (max-width: 800px) {
@@ -26,6 +87,8 @@
 
   .donatu {
     justify-content: center;
+    grid-template-columns: 100%;
+
   }
 
   .donatuGaldetegia {

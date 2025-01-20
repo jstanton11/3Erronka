@@ -1,32 +1,32 @@
-<div class="donatu d-flex justify-content-between">
+<div class="donatu">
   <div class="donatuGaldetegia">
     <form #donatuForm="ngForm" (ngSubmit)="onSubmit(donatuForm)">
       <h3 class="text-center">DONATU</h3>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="izena" class="form-label">Izena:</label>
         <input type="text" class="form-control" id="izena" name="izena" required
-          [(ngModel)]="izena" #izenaModel="ngModel" pattern="^[a-zA-Z]+$">
+          [(ngModel)]="izena" #izenaModel="ngModel" pattern="^[a-zA-Z]+$" placeholder="Idatzi hemen zure izena">
         <div *ngIf="izenaModel.invalid && izenaModel.touched" class="text-danger">
           Izena parametroan letrak bakarrik onartzen dira!
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="abizena" class="form-label">Abizena:</label>
         <input type="text" class="form-control" id="abizena" name="abizena" required
-          [(ngModel)]="abizena" #abizenaModel="ngModel" pattern="^[a-zA-Z]+$">
+          [(ngModel)]="abizena" #abizenaModel="ngModel" pattern="^[a-zA-Z]+$" placeholder="Idatzi hemen zure abizena">
         <div *ngIf="abizenaModel.invalid && abizenaModel.touched" class="text-danger">
           Abizena parametroan letrak bakarrik onartzen dira!
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="email" class="form-label">Email:</label>
         <input type="email" class="form-control" id="email" name="email" required
-          [(ngModel)]="email" #emailModel="ngModel" email>
-        <div *ngIf="emailModel.invalid && emailModel.touched" class="text-danger">
+          [(ngModel)]="email" #emailModel="ngModel" email placeholder="Idatzi hemen zure emaila">
+        <div *ngIf="emailModel.invalid && emailModel.touched" class="text-danger" >
           Email parametroa baliogarria izan behar da!
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="kantitatea" class="form-label">Kantitatea:</label>
         <input type="number" class="form-control" id="kantitatea" name="kantitatea" required
           [(ngModel)]="kantitatea" #kantitateaModel="ngModel" pattern="^\d+(\.\d{1,2})?$">
@@ -34,20 +34,20 @@
           Kantitatea zenbaki bat izan behar da, gehienez 2 hamartarrekin!
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="kontua" class="form-label">Kontua:</label>
         <input type="text" class="form-control" id="kontua" name="kontua" required
-          [(ngModel)]="kontua" #kontuaModel="ngModel" pattern="^[a-zA-Z0-9]+$">
+          [(ngModel)]="kontua" #kontuaModel="ngModel" pattern="^[a-zA-Z0-9]+$" placeholder="Idatzi hemen zure kontu korrontea">
         <div *ngIf="kontuaModel.invalid && kontuaModel.touched" class="text-danger">
           Kontua parametroan zenbakiak eta letrak onartzen dira.
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-st" id="donatuBot" [disabled]="donatuForm.invalid">DONATU</button>
+        <button type="submit" class="btn " id="donatuBot" [disabled]="donatuForm.invalid">DONATU</button>
       </div>
     </form>
   </div>
   <div class="argazkia">
-    <img src="../../../assets/img/donatu-img.webp" id="argazkia" alt="donatu-argazkia" class="img-fluid" width="700px">
+    <img src="../../../assets/img/donatu-img.webp" id="argazkia" alt="donatu-argazkia" class="img-fluid">
   </div>
 </div>

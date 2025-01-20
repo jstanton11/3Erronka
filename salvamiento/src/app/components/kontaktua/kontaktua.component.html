@@ -1,46 +1,46 @@
 <div class="kontaktua">
   <div class="argazkiaKontaktua">
-    <img src="../../../assets/img/kontaktua-img.jpg" id="argazkia" alt="kontaktua-img" class="img-fluid" width="700px">
+    <img src="../../../assets/img/kontaktua-img.jpg" id="argazkia" alt="kontaktua-img" class="img-fluid">
   </div>
   <div class="galdetegia">
     <h3 class="text-center">KONTAKTUA</h3>
     <form #kontaktuaForm="ngForm" (ngSubmit)="onSubmit(kontaktuaForm)">
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="izena" class="form-label">Izena:</label>
         <input type="text" class="form-control" id="izena" name="izena" required
-          [(ngModel)]="izena" #izenaModel="ngModel" pattern="^[a-zA-Z]+$">
+          [(ngModel)]="izena" #izenaModel="ngModel" pattern="^[a-zA-Z]+$" placeholder="Idatzi hemen zure izena">
         <div *ngIf="izenaModel.invalid && izenaModel.touched" class="text-danger">
           Izena parametroan letrak bakarrik onartzen dira!
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="abizena" class="form-label">Abizena:</label>
         <input type="text" class="form-control" id="abizena" name="abizena" required
-          [(ngModel)]="abizena" #abizenaModel="ngModel" pattern="^[a-zA-Z]+$">
+          [(ngModel)]="abizena" #abizenaModel="ngModel" pattern="^[a-zA-Z]+$" placeholder="Idatzi hemen zure abizena">
         <div *ngIf="abizenaModel.invalid && abizenaModel.touched" class="text-danger">
           Abizena parametroan letrak bakarrik onartzen dira!
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="email" class="form-label">Email:</label>
         <input type="email" class="form-control" id="email" name="email" required
-          [(ngModel)]="email" #emailModel="ngModel">
+          [(ngModel)]="email" #emailModel="ngModel" placeholder="Idatzi hemen zure emaila">
         <div *ngIf="emailModel.invalid && emailModel.touched" class="text-danger">
           Email parametroa baliogarria izan behar da!
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="nota" class="form-label">Nota:</label>
         <input type="text" class="form-control" id="nota" name="nota" required
-          [(ngModel)]="nota" #notaModel="ngModel" pattern="^[a-zA-Z0-9 ]+$">
+          [(ngModel)]="nota" #notaModel="ngModel" pattern="^[a-zA-Z0-9 ]+$" placeholder="Idatzi hemen zure nota">
         <div *ngIf="notaModel.invalid && notaModel.touched" class="text-danger">
           Nota parametroak letrak edo zenbakiak bakarrik onartzen ditu!
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 parametros">
         <label for="iradokizuna" class="form-label">Iradokizuna:</label>
         <input type="text" class="form-control" id="iradokizuna" name="iradokizuna" required
-          [(ngModel)]="iradokizuna" #iradokizunaModel="ngModel" pattern="^[a-zA-Z0-9 ]+$">
+          [(ngModel)]="iradokizuna" #iradokizunaModel="ngModel" pattern="^[a-zA-Z0-9 ]+$" placeholder="Idatzi hemen zure iradokizuna">
         <div *ngIf="iradokizunaModel.invalid && iradokizunaModel.touched" class="text-danger">
           Iradokizuna parametroak letrak edo zenbakiak bakarrik onartzen ditu!
         </div>

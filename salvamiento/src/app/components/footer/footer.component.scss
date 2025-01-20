@@ -3,16 +3,29 @@ $secondary: #002F6C;
 .footer {
   background-color: $secondary;
   color: white;
+}
+.bi {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
 
-  .bi {
-    font-size: 1.5rem;
-    transition: transform 0.2s ease-in-out;
-
-    &:hover {
-      transform: scale(1.8);
-    }
+  &:hover {
+    color: #D0021B;
   }
 }
+.custom-shadow{
+  &:hover{
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.829));
+  }
+}
+.scale-icon{
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
 
 
 
