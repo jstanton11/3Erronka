@@ -1,1 +1,20 @@
-<p>admin works!</p>
+<section>
+  <h1>ERRESKATATUAK</h1>
+  <article>
+    <div *ngFor="let erreskatatua of erreskatatuak" class="card" style="width: 18rem;">
+      <img src={{erreskatatua.argazkia}} class="card-img-top">
+      <div class="card-body">
+        <h3 class="card-title">{{erreskatatua.izen_osoa}}</h3>
+        <p class="card-text">Adina: {{erreskatatua.adina}}</p>
+        <p class="card-text">Sexua: {{erreskatatua.sexua}}</p>
+        <details>
+          <summary>Oharrak</summary>
+          <p>Jatorria: {{erreskatatua.jatorria}}</p>
+          <p>Balorazio medikoa: {{erreskatatua.balorazio_medikoa}}</p>
+        </details>
+        <button>EGUNERATU</button>
+        <button>EZABATU</button>
+      </div>
+    </div>
+  </article>
+</section>

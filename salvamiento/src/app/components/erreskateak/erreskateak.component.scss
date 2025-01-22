@@ -1,0 +1,139 @@
+//Kolore nagusiak
+$primary:  #002F6C ;
+$secondary: #D0021B;
+$tertiary: #4A90E2;
+
+section{
+ justify-content: center;
+}
+
+article{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Marcellus;
+  color: $secondary;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: Marcellus;
+  color: $primary;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 18px;
+}
+
+.card {
+  flex: 0 0 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  border: #002F6C solid 1px;
+  box-shadow: 0 0px 10px $tertiary;
+  margin-bottom: 20px;
+  &:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+details{
+  margin-top: auto;
+}
+
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid $primary;
+  position: relative;
+  cursor: pointer;
+  font-family: Marcellus;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary:after {
+  content: "+";
+  color: $primary;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+details summary {
+  outline: 0;
+}
+details p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 1480px) {
+  .card {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 890px) {
+  .card {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 0 0 calc(100% - 20px); /* En pantallas muy pequeñas: 1 por fila */
+    max-width: calc(100% - 20px);
+  }
+}

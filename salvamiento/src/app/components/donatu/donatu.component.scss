@@ -5,7 +5,9 @@ $tertiary: #4A90E2;
 
 //Tituluaren diseinua
 h3{
-  font-family: Marcellus, bold;
+  font-family: Marcellus;
+  font-weight: bolder;
+  color: $secondary;
   font-size: 50px;
 }
 

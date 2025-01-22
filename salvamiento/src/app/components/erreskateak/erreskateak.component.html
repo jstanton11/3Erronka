@@ -1,1 +1,18 @@
-<p>erreskateak works!</p>
+<section>
+  <h1>ERRESKATEAK</h1>
+  <article>
+    <div *ngFor="let erreskatea of erreskateak" class="card" style="width: 18rem;">
+      <img src={{erreskatea.argazkia}} class="card-img-top">
+      <div class="card-body">
+        <h3 class="card-title">{{erreskatea.lekua}}</h3>
+        <p class="card-text">Data: {{erreskatea.data}}</p>
+        <p class="card-text">Erreskatatutako pertsonak: {{erreskatea.erreskatatutako_pertsonak}}</p>
+        <details>
+          <summary>Oharrak</summary>
+          {{erreskatea.oharrak}}
+        </details>
+      </div>
+    </div>
+  </article>
+</section>
+

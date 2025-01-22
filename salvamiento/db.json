@@ -1,0 +1,286 @@
+{
+  "erreskateak": [
+    {
+      "id": 1,
+      "lekua": "Alboran Itsasoa",
+      "data": "2025-01-15",
+      "erreskatatutako_pertsonak": 23,
+      "oharrak": "Bi pertsona hilik aurkitu dira txaluparen barruan.",
+      "argazkia": "https://fireca.es/wp-content/uploads/2020/09/salvamento-maritimo.jpg"
+    },
+    {
+      "id": 2,
+      "lekua": "Gibraltar itsasartea",
+      "data": "2025-01-18",
+      "erreskatatutako_pertsonak": 15,
+      "oharrak": "Erreskate zaila eguraldi baldintza txarrak zirela eta.",
+      "argazkia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4i77metXivwmk5-DKaxuRoQ7aaLqd2pNQIQ&s"
+    },
+    {
+      "id": 3,
+      "lekua": "Libiako Kosta",
+      "data": "2025-01-20",
+      "erreskatatutako_pertsonak": 42,
+      "oharrak": "Adingabe batzuk erreskatatu dira; hainbat deshidratazio kasu.",
+      "argazkia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdZmy-nXp7WeUJBUM9pAOLVOboYBnivEADoRxpdnzIxip-CrXYs4Q5MBaNxAQYYsuLx8&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "lekua": "Grezia uharteak",
+      "data": "2025-01-22",
+      "erreskatatutako_pertsonak": 30,
+      "oharrak": "Hotz gaixotasun arina duten hainbat pertsona.",
+      "argazkia": "https://lh4.googleusercontent.com/proxy/mTFA7FlEY9WPYEAW7qDQo5ud9MHYm-aov2jfR0ZACvotFNybZaS5_XiSr4GIU-Bjb_lcL2B_E1e1VT68k1a_6G0Yd8q0SaWZbmqvfFLgQDWseAtw0HqSExKigzJkKAgqErRpYNWV_I1kXtBMN5M_8HkrsRio3t_ggHBVXEBrQHPGad5waa5VP0SiFugUe3Du3FyVo_ZTkv7ZgcvFg_fUVhHSmF_TwHMPCLciWQ"
+    },
+    {
+      "id": 5,
+      "lekua": "Aljeriako Kosta",
+      "data": "2025-01-25",
+      "erreskatatutako_pertsonak": 18,
+      "oharrak": "Ez da gertakari larririk jakinarazi.",
+      "argazkia": "https://www.naiz.eus/media/asset_publics/resources/000/866/574/article_main_landscape/aita-mari.jpg"
+    },
+    {
+      "id": 6,
+      "lekua": "Joniko Itsasoa",
+      "data": "2025-01-27",
+      "erreskatatutako_pertsonak": 25,
+      "oharrak": "Gaueko erreskate arrakastatsua.",
+      "argazkia": "https://i.ytimg.com/vi/kMpH-ng2NPs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAj8qfMoYtzVrZHaXWRMT-RcYbi2g"
+    },
+    {
+      "id": 7,
+      "lekua": "Siziliako Kanala",
+      "data": "2025-01-30",
+      "erreskatatutako_pertsonak": 50,
+      "oharrak": "Lau adingabek arreta mediko urgentea behar zuten.",
+      "argazkia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOBNGNbWT6N8ZY_kK_H2szLWx43Pq7RuurCg&s"
+    },
+    {
+      "id": 8,
+      "lekua": "Adriatiko Itsasoa",
+      "data": "2025-02-02",
+      "erreskatatutako_pertsonak": 22,
+      "oharrak": "Beste ontziekin koordinatutako erreskatea.",
+      "argazkia": "https://salvamentomaritimo.org/wp-content/uploads/2020/11/Rescate-Imagen-archivo-CGT-Mar-y-Puertos-1024x768.jpg"
+    },
+    {
+      "id": 9,
+      "lekua": "Sidra Golko",
+      "data": "2025-02-05",
+      "erreskatatutako_pertsonak": 35,
+      "oharrak": "Herio kasu bat erregistratu da.",
+      "argazkia": "https://s1.ppllstatics.com/laverdad/www/multimedia/2023/10/11/SALVAMENTO-kW6E--1200x840@La%20Verdad.jpg"
+    },
+    {
+      "id": 10,
+      "lekua": "Mesinako itsasartea",
+      "data": "2025-02-08",
+      "erreskatatutako_pertsonak": 28,
+      "oharrak": "Hotz gaixotasun moderatuak dituzten hainbat kasu.",
+      "argazkia": "https://cadenaser.com/resizer/v2/2B6G3LCC7RJNLK7V4AEWABS36U.jpg?auth=65c045999ef14803afb686586cd5eeaa9f7d60ceb303f435e13980dfdc93f899"
+    }
+  ],
+  "erreskatatuak": [
+    {
+      "id": 1,
+      "erreskate_id": 1,
+      "izen_osoa": "Amina Diouf",
+      "argazkia": "assets/img/mujer01.png",
+      "adina": 28,
+      "sexua": "E",
+      "jatorria": "Senegal",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 2,
+      "erreskate_id": 1,
+      "izen_osoa": "Mamadou Cisse",
+      "argazkia": "assets/img/hombre01.png",
+      "adina": 35,
+      "sexua": "G",
+      "jatorria": "Mali",
+      "balorazio_medikoa": "Deshidratatuta"
+    },
+    {
+      "id": 3,
+      "erreskate_id": 2,
+      "izen_osoa": "Fatoumata Koné",
+      "argazkia": "assets/img/mujer02.png",
+      "adina": 19,
+      "sexua": "E",
+      "jatorria": "Ginea",
+      "balorazio_medikoa": "Desnutrituta"
+    },
+    {
+      "id": 4,
+      "erreskate_id": 2,
+      "izen_osoa": "Ibrahim Diallo",
+      "argazkia": "assets/img/hombre02.png",
+      "adina": 40,
+      "sexua": "G",
+      "jatorria": "Burkina Faso",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 5,
+      "erreskate_id": 3,
+      "izen_osoa": "Mariama Traoré",
+      "argazkia": "assets/img/mujer03.png",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "Boli Kosta",
+      "balorazio_medikoa": "Deshidratatuta"
+    },
+    {
+      "id": 6,
+      "erreskate_id": 3,
+      "izen_osoa": "Oumar Sissoko",
+      "argazkia": "assets/img/hombre03.png",
+      "adina": 30,
+      "sexua": "G",
+      "jatorria": "Mali",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 7,
+      "erreskate_id": 4,
+      "izen_osoa": "Kadidia Sangaré",
+      "argazkia": "assets/img/mujer04.png",
+      "adina": 25,
+      "sexua": "E",
+      "jatorria": "Senegal",
+      "balorazio_medikoa": "Desnutrituta"
+    },
+    {
+      "id": 8,
+      "erreskate_id": 4,
+      "izen_osoa": "Moussa Konaté",
+      "argazkia": "assets/img/hombre04.png",
+      "adina": 33,
+      "sexua": "G",
+      "jatorria": "Ginea",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 9,
+      "erreskate_id": 5,
+      "izen_osoa": "Fatim Sidibé",
+      "argazkia": "assets/img/mujer05.png",
+      "adina": 21,
+      "sexua": "E",
+      "jatorria": "Boli Kosta",
+      "balorazio_medikoa": "Deshidratatuta"
+    },
+    {
+      "id": 10,
+      "erreskate_id": 5,
+      "izen_osoa": "Abdoulaye Doumbia",
+      "argazkia": "assets/img/hombre05.png",
+      "adina": 29,
+      "sexua": "G",
+      "jatorria": "Burkina Faso",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 11,
+      "erreskate_id": 6,
+      "izen_osoa": "Adama Coulibaly",
+      "argazkia": "assets/img/mujer06.png",
+      "adina": 32,
+      "sexua": "E",
+      "jatorria": "Senegal",
+      "balorazio_medikoa": "Deshidratatuta"
+    },
+    {
+      "id": 12,
+      "erreskate_id": 6,
+      "izen_osoa": "Sekouba Bah",
+      "argazkia": "assets/img/hombre06.png",
+      "adina": 27,
+      "sexua": "G",
+      "jatorria": "Ginea",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 13,
+      "erreskate_id": 7,
+      "izen_osoa": "Hawa Keita",
+      "argazkia": "assets/img/mujer07.png",
+      "adina": 24,
+      "sexua": "E",
+      "jatorria": "Mali",
+      "balorazio_medikoa": "Desnutrituta"
+    },
+    {
+      "id": 14,
+      "erreskate_id": 7,
+      "izen_osoa": "Boubacar Traoré",
+      "argazkia": "assets/img/hombre07.png",
+      "adina": 31,
+      "sexua": "G",
+      "jatorria": "Senegal",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 15,
+      "erreskate_id": 8,
+      "izen_osoa": "Kadiatou Diallo",
+      "argazkia": "assets/img/mujer08.png",
+      "adina": 26,
+      "sexua": "E",
+      "jatorria": "Ginea",
+      "balorazio_medikoa": "Deshidratatuta"
+    },
+    {
+      "id": 16,
+      "erreskate_id": 8,
+      "izen_osoa": "Mohamed Camara",
+      "argazkia": "assets/img/hombre08.png",
+      "adina": 34,
+      "sexua": "G",
+      "jatorria": "Burkina Faso",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 17,
+      "erreskate_id": 9,
+      "izen_osoa": "Salimata Doumbia",
+      "argazkia": "assets/img/mujer09.png",
+      "adina": 29,
+      "sexua": "E",
+      "jatorria": "Mali",
+      "balorazio_medikoa": "Deshidratatuta"
+    },
+    {
+      "id": 18,
+      "erreskate_id": 9,
+      "izen_osoa": "Ibrahima Sow",
+      "argazkia": "assets/img/hombre09.png",
+      "adina": 37,
+      "sexua": "G",
+      "jatorria": "Senegal",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 19,
+      "erreskate_id": 10,
+      "izen_osoa": "Khadija Barry",
+      "argazkia": "assets/img/mujer10.png",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "Ginea",
+      "balorazio_medikoa": "Desnutrituta"
+    },
+    {
+      "id": 20,
+      "erreskate_id": 10,
+      "izen_osoa": "Amadou Touré",
+      "argazkia": "assets/img/hombre10.png",
+      "adina": 39,
+      "sexua": "G",
+      "jatorria": "Mali",
+      "balorazio_medikoa": "Osasuntsu"
+    }
+  ]
+}

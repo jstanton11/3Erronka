@@ -12,6 +12,7 @@ import { GuriBuruzComponent } from './components/guri-buruz/guri-buruz.component
 import { FooterComponent } from './components/footer/footer.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { GureGaleriaComponent } from './components/gure-galeria/gure-galeria.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { GureGaleriaComponent } from './components/gure-galeria/gure-galeria.com
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule
   ],

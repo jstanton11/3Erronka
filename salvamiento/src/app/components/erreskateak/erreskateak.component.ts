@@ -1,3 +1,4 @@
+import { ServiceService } from './../../services/service.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./erreskateak.component.scss']
 })
 export class ErreskateakComponent {
+  erreskateak: any;
+  constructor(private ServiceService: ServiceService) {
+    this.ServiceService.getErreskateak().subscribe(data => {
+      this.erreskateak = data
+    });
+}
 
 }

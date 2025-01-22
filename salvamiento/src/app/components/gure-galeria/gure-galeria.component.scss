@@ -8,6 +8,7 @@ h1 {
   font-size: 50px;
   font-family: Marcellus;
   font-weight: bolder;
+  color: $secondary;
   margin-bottom: 30px;
   margin-top: 30px;
   text-align: center;
@@ -82,20 +83,5 @@ h1 {
 	display: block;
 }
 
-/*Image title styles*/
-.image_title {
-	background: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	left: 0; bottom: 0;
-width: 640px;
-
-}
-.image_title a {
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	padding: 20px;
-	font-size: 16px;
-}
 
 
