@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { GureGaleriaComponent } from './components/gure-galeria/gure-galeria.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormAltaEguneraketaComponent } from './components/form-alta-eguneraketa/form-alta-eguneraketa.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     GuriBuruzComponent,
     FooterComponent,
     AdminComponent,
-    GureGaleriaComponent
+    GureGaleriaComponent,
+    FormAltaEguneraketaComponent
   ],
   imports: [
     BrowserModule,

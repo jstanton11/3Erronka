@@ -28,6 +28,17 @@ erreskatatua: Erreskatatuak = {id: 0, erreskate_id: 0, izen_osoa: '', argazkia: 
 constructor(private http: HttpClient) {
   this.datos = [];
 }
+
+public erreskatatuGuztiak(){
+  return new Promise(
+    resolve => {
+      this.http.get('http://localhost:3004/erreskatatuak').subscribe(
+        data => resolve(data)
+      );
+    }
+  )
+}
+
 //ERRESKATEAK
 public getErreskateak(): Observable<any> {
   return this.http.get(this.urlErreskateak);
@@ -40,7 +51,11 @@ public getErreskateak(): Observable<any> {
     let urlDeleteErreskateak = '${this.urlErreskateak}/${erreskatea.id}';
     return this.http.delete<Erreskateak>(urlDeleteErreskateak);
   }
-  
+  eguneratuErreskateak(erreskatea:Erreskateak):Observable<Erreskateak>{
+    const urlUpdateErreskateak = '${this.urlErreskateak}/${erreskatea.id}';
+    return this.http.put<Erreskateak>(urlUpdateErreskateak, erreskatea, httpOptions);
+  }
+
 //ERRESKATUAK
 public getErreskatatuak(): Observable<any> {
   return this.http.get(this.urlErreskatatuak);
@@ -51,5 +66,9 @@ public getErreskatatuak(): Observable<any> {
   bajaErreskatatuak(erreskatatua:Erreskatatuak):Observable<Erreskatatuak>{
     let urlDeleteErreskatatuak = '${this.urlErreskatatuak}/${erreskatatua.id}';
     return this.http.delete<Erreskatatuak>(urlDeleteErreskatatuak);
+  }
+  eguneratuErreskatatuak(erreskatatua:Erreskatatuak):Observable<Erreskatatuak>{
+    const urlUpdateErreskatatuak = '${this.urlErreskatatuak}/${erreskatatua.id}';
+    return this.http.put<Erreskatatuak>(urlUpdateErreskatatuak, erreskatatua, httpOptions);
   }
 }

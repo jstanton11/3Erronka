@@ -8,6 +8,7 @@ import { DonatuComponent } from './components/donatu/donatu.component';
 import { KontaktuaComponent } from './components/kontaktua/kontaktua.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { authGuard } from './guards/auth.guard';
+import { FormAltaEguneraketaComponent } from './components/form-alta-eguneraketa/form-alta-eguneraketa.component';
 
 const routes: Routes = [
     { path: "", redirectTo: "hasiera", pathMatch: "full" },
@@ -17,7 +18,9 @@ const routes: Routes = [
     { path: "guriBuruz", component: GuriBuruzComponent },
     { path: "gureGaleria", component: GureGaleriaComponent},
     { path: "kontaktua", component: KontaktuaComponent },
-    { path: 'admin', component: AdminComponent, canActivate: [authGuard] },
+    { path: 'admin', component: AdminComponent, canActivate: [authGuard]},
+    {path: 'update/:id', component: FormAltaEguneraketaComponent},
+    {path: 'alta' , component: FormAltaEguneraketaComponent}
 ];
 
 @NgModule({
