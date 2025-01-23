@@ -8,32 +8,69 @@ import { Erreskatatuak } from 'src/app/models/erreskatatuak';
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent {
-  erreskatatuak: any;
-  url: string = "";
-  erreskatatua: Erreskatatuak = {id: 0, erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
-  selectErreskatatua: any;
-  indizea: any;
+  erreskatatuak: Erreskatatuak[] = [];
+  selectErreskatatua: Erreskatatuak = {id: 0, erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
+  indizea: number = 0;
+  opcion: string = 'create';
 
   constructor(private ServiceService: ServiceService) {
-    this.erreskatatuak = [];
     this.ServiceService.getErreskatatuak().subscribe(data => {
-      this.erreskatatuak = data
+      this.erreskatatuak = data;
     });
+  }
+
+  updateErreskatatua(erreskatatua: Erreskatatuak) {
+    this.selectErreskatatua = erreskatatua;
+    this.opcion = 'update';
+  }
+
+  bidaliIndizea(i: number): void {
+    this.indizea = i;
+  }
+
+  baja(erreskatatua: Erreskatatuak) {
+    this.ServiceService.bajaErreskatatuak(erreskatatua).subscribe(() => {
+      this.erreskatatuak = this.erreskatatuak.filter((t: Erreskatatuak) => t.id !== erreskatatua.id);
+      alert('Erreskatatua ezabatua');
+    });
+  }
+
+  registroakDaude() {
+    return this.erreskatatuak.length > 0;
+  }
+
+  cargarLista() {
+    this.ServiceService.getErreskatatuak().subscribe(data => {
+      this.erreskatatuak = data; // Actualiza la lista
+    });
+  }
 }
 
-updateErreskatatua(erreskatatua : Erreskatatuak){
-this.selectErreskatatua = erreskatatua;
-}
+// export class AdminComponent {
+//   erreskatatuak: any;
+//   url: string = "";
+//   erreskatatua: Erreskatatuak = {id: 0, erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
+//   selectErreskatatua: any;
+//   indizea: any;
 
-bidaliIndizea(i: number): void{
-  this.indizea = i;
-}
+//   constructor(private ServiceService: ServiceService) {
+//     this.erreskatatuak = [];
+//     this.ServiceService.getErreskatatuak().subscribe(data => {
+//       this.erreskatatuak = data
+//     });
+// }
 
-baja(erreskatatua : Erreskatatuak){
-  this.ServiceService.bajaErreskatatuak(erreskatatua).subscribe(()=> (this.erreskatatuak = this.erreskatatuak.filter((t:Erreskatatuak) => t.id !== erreskatatua.id)));
-}
+// prepareEguneratu(indizea: number, erreskatatua: any): void {
+//   this.indizea = indizea;
+//   this.selectErreskatatua = erreskatatua;
+// }
 
-registroakDaude(){
-  return true;
-}
-}
+
+// baja(erreskatatua : Erreskatatuak){
+//   this.ServiceService.bajaErreskatatuak(erreskatatua).subscribe(()=> (this.erreskatatuak = this.erreskatatuak.filter((t:Erreskatatuak) => t.id !== erreskatatua.id)));
+// }
+
+// registroakDaude(){
+//   return true;
+// }
+// }

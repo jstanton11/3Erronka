@@ -1,78 +1,52 @@
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { Erreskatatuak } from './../../models/erreskatatuak';
 import { ServiceService } from './../../services/service.service';
-import { Component, Input } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { data } from 'jquery';
-import { Erreskatatuak } from 'src/app/models/erreskatatuak';
 
 @Component({
   selector: 'app-form-alta-eguneraketa',
   templateUrl: './form-alta-eguneraketa.component.html',
   styleUrls: ['./form-alta-eguneraketa.component.scss']
 })
-export class FormAltaEguneraketaComponent {
- @Input() erreskatatua:any;
- @Input() indizea:any;
- opcion: string = "";
- aldaketa: boolean | undefined;
-  long: number = 0;
-  erreskatatuaLong: Erreskatatuak = {id: 0, erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
+export class FormAltaEguneraketaComponent implements OnInit {
+  @Input() erreskatatua: Erreskatatuak = {erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
+  @Input() indizea: number = 0;
+  @Input() opcion: string = 'create';
+  @Output() actualizarLista = new EventEmitter<void>();
+  @ViewChild('exampleModal', { static: false }) modal!: ElementRef;
 
-  constructor(public ServiceService:ServiceService, private activatedRoute:ActivatedRoute, private router:Router) {
-    this.activatedRoute.params.subscribe(params => {
-      this.indizea = params['id'];
-      if(!params['id']){
-        this.opcion = "create";
-        this.erreskatatua = {id: 0, erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
-      }else{
-        this.opcion = "update";
+  constructor(private ServiceService: ServiceService) {}
+
+  ngOnInit(): void {
+    if (this.opcion === 'update') {
+      // Lógica para cargar los datos cuando es update
+    }
+  }
+
+  altaErreskatatua() {
+    this.ServiceService.altaErreskatatuak(this.erreskatatua).subscribe((datos: any) => {
+      if (datos === 'OK') {
+        alert('Erreskatatua erregistratuta');
+        // Recarga la lista de rescatados para actualizar la vista
+        this.ServiceService.getErreskatatuak().subscribe((data: any) => {
+          this.erreskatatua = data;
+          this.actualizarLista.emit();
+        });
+        this.closeModal();
       }
     });
-
-    ServiceService.erreskatatuGuztiak()
-    .then(data => {
-      this.erreskatatua = data;
-      if(this.opcion == "update"){
-        this.erreskatatua = this.erreskatatua[this.indizea];
-        this.aldaketa = false;
-      } else if(this.opcion == "create"){
-        this.erreskatatua = {id: 0, erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
-      }
-    })
-
   }
 
-  update(){
-    this.updateErreskatatua();
+  update(): void {
+    this.ServiceService.eguneratuErreskatatuak(this.erreskatatua).subscribe(() => {
+      alert('Erreskatatua eguneratu da');
+      this.actualizarLista.emit();
+      this.closeModal();
+    });
   }
 
-  updateErreskatatua(){
-    if(this.opcion == "update"){
-      this.ServiceService.eguneratuErreskatatuak(this.erreskatatua).subscribe((dato:any) => {
-        if(dato == 'OK'){
-          alert('aldaketa eginda');
-        }else{
-          alert('ez da aldaketa egin')
-        }
-        //navigate
-      });
-    }
+  closeModal() {
+    const modalElement = this.modal.nativeElement;
+    (modalElement as any).modal('hide');
   }
-
-  altaErreskatatua(){
-    if(this.opcion == 'alta'){
-      // this.long = this.erreskatatua.length;
-      // this.long--;
-      // this.erreskatatuaLong = this.erreskatatua[this.long];
-      // this.erreskatatua.id = this.erreskatatuaLong.id +1;
-
-      this.ServiceService.altaErreskatatuak(this.erreskatatua).subscribe((datos:any) => {
-        if(datos == 'OK'){
-           alert('erreskatatua erregistratua');
-          //navigate
-        }
-      });
-    }
-  }
-
-
 }
+

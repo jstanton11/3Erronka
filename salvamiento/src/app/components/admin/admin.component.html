@@ -3,7 +3,7 @@
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >ERREGISTRATU</button>
   <article *ngIf="registroakDaude(); else registroGabe">
     <div *ngFor="let erreskatatua of erreskatatuak; let i = index" class="card" style="width: 18rem;">
-      <img src={{erreskatatua.argazkia}} class="card-img-top">
+      <img [src]="erreskatatua.argazkia ? erreskatatua.argazkia : 'assets/img/desconocido.jpg'" class="card-img-top" alt="Imagen no disponible">
       <div class="card-body">
         <h3 class="card-title">{{erreskatatua.izen_osoa}}</h3>
         <p class="card-text">Adina: {{erreskatatua.adina}}</p>
@@ -25,21 +25,21 @@
 </ng-template>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" #exampleModal tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">{{opcion === 'update' ? 'Eguneratu' : 'Erregistratu'}}</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <app-form-alta-eguneraketa
-        [erreskatatua] = "selectErreskatatua"
-        [indizea] = "indizea">
-
+          [erreskatatua]="selectErreskatatua"
+          [indizea]="indizea"
+          [opcion]="opcion"
+          (actualizarLista)="cargarLista()">
         </app-form-alta-eguneraketa>
       </div>
     </div>
   </div>
 </div>
-

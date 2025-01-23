@@ -1,7 +1,7 @@
 {
   "erreskateak": [
     {
-      "id": 1,
+      "id": "1",
       "lekua": "Alboran Itsasoa",
       "data": "2025-01-15",
       "erreskatatutako_pertsonak": 23,
@@ -9,7 +9,7 @@
       "argazkia": "https://fireca.es/wp-content/uploads/2020/09/salvamento-maritimo.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "lekua": "Gibraltar itsasartea",
       "data": "2025-01-18",
       "erreskatatutako_pertsonak": 15,
@@ -17,7 +17,7 @@
       "argazkia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4i77metXivwmk5-DKaxuRoQ7aaLqd2pNQIQ&s"
     },
     {
-      "id": 3,
+      "id": "3",
       "lekua": "Libiako Kosta",
       "data": "2025-01-20",
       "erreskatatutako_pertsonak": 42,
@@ -25,7 +25,7 @@
       "argazkia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdZmy-nXp7WeUJBUM9pAOLVOboYBnivEADoRxpdnzIxip-CrXYs4Q5MBaNxAQYYsuLx8&usqp=CAU"
     },
     {
-      "id": 4,
+      "id": "4",
       "lekua": "Grezia uharteak",
       "data": "2025-01-22",
       "erreskatatutako_pertsonak": 30,
@@ -33,7 +33,7 @@
       "argazkia": "https://lh4.googleusercontent.com/proxy/mTFA7FlEY9WPYEAW7qDQo5ud9MHYm-aov2jfR0ZACvotFNybZaS5_XiSr4GIU-Bjb_lcL2B_E1e1VT68k1a_6G0Yd8q0SaWZbmqvfFLgQDWseAtw0HqSExKigzJkKAgqErRpYNWV_I1kXtBMN5M_8HkrsRio3t_ggHBVXEBrQHPGad5waa5VP0SiFugUe3Du3FyVo_ZTkv7ZgcvFg_fUVhHSmF_TwHMPCLciWQ"
     },
     {
-      "id": 5,
+      "id": "5",
       "lekua": "Aljeriako Kosta",
       "data": "2025-01-25",
       "erreskatatutako_pertsonak": 18,
@@ -41,7 +41,7 @@
       "argazkia": "https://www.naiz.eus/media/asset_publics/resources/000/866/574/article_main_landscape/aita-mari.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "lekua": "Joniko Itsasoa",
       "data": "2025-01-27",
       "erreskatatutako_pertsonak": 25,
@@ -49,7 +49,7 @@
       "argazkia": "https://i.ytimg.com/vi/kMpH-ng2NPs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAj8qfMoYtzVrZHaXWRMT-RcYbi2g"
     },
     {
-      "id": 7,
+      "id": "7",
       "lekua": "Siziliako Kanala",
       "data": "2025-01-30",
       "erreskatatutako_pertsonak": 50,
@@ -57,7 +57,7 @@
       "argazkia": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOBNGNbWT6N8ZY_kK_H2szLWx43Pq7RuurCg&s"
     },
     {
-      "id": 8,
+      "id": "8",
       "lekua": "Adriatiko Itsasoa",
       "data": "2025-02-02",
       "erreskatatutako_pertsonak": 22,
@@ -65,7 +65,7 @@
       "argazkia": "https://salvamentomaritimo.org/wp-content/uploads/2020/11/Rescate-Imagen-archivo-CGT-Mar-y-Puertos-1024x768.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "lekua": "Sidra Golko",
       "data": "2025-02-05",
       "erreskatatutako_pertsonak": 35,
@@ -73,7 +73,7 @@
       "argazkia": "https://s1.ppllstatics.com/laverdad/www/multimedia/2023/10/11/SALVAMENTO-kW6E--1200x840@La%20Verdad.jpg"
     },
     {
-      "id": 10,
+      "id": "10",
       "lekua": "Mesinako itsasartea",
       "data": "2025-02-08",
       "erreskatatutako_pertsonak": 28,
@@ -109,7 +109,7 @@
       "argazkia": "assets/img/mujer02.png",
       "adina": 19,
       "sexua": "E",
-      "jatorria": "Ginea",
+      "jatorria": "Gineaaa",
       "balorazio_medikoa": "Desnutrituta"
     },
     {
@@ -280,6 +280,116 @@
       "adina": 39,
       "sexua": "G",
       "jatorria": "Mali",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "Ane Goikuria",
+      "argazkia": "",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "amorebieta",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "Ane Goikuria",
+      "argazkia": "",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "amorebieta",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "Ane Goikuria",
+      "argazkia": "",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "amorebieta",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "Ane Goikuria",
+      "argazkia": "",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "amorebieta",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "Ane Goikuria",
+      "argazkia": "",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "amorebieta",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "Ane Goikuria",
+      "argazkia": "",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "amorebieta",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "Ane Goikuria",
+      "argazkia": "",
+      "adina": 22,
+      "sexua": "E",
+      "jatorria": "amorebieta",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "Ares",
+      "argazkia": "",
+      "adina": 4,
+      "sexua": "G",
+      "jatorria": "usenas",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "aresito",
+      "argazkia": "",
+      "adina": 5,
+      "sexua": "G",
+      "jatorria": "usenas",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "aresito",
+      "argazkia": "",
+      "adina": 5,
+      "sexua": "G",
+      "jatorria": "usenas",
+      "balorazio_medikoa": "Osasuntsu"
+    },
+    {
+      "id": 0,
+      "erreskate_id": 0,
+      "izen_osoa": "aresitooo",
+      "argazkia": "",
+      "adina": 2,
+      "sexua": "G",
+      "jatorria": "Gineaaa",
       "balorazio_medikoa": "Osasuntsu"
     }
   ]
