@@ -1,6 +1,6 @@
 <section>
   <h1>ERRESKATATUAK</h1>
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >ERREGISTRATU</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="ultimoId()">ERREGISTRATU</button>
   <article *ngIf="registroakDaude(); else registroGabe">
     <div *ngFor="let erreskatatua of erreskatatuak; let i = index" class="card" style="width: 18rem;">
       <img [src]="erreskatatua.argazkia ? erreskatatua.argazkia : 'assets/img/desconocido.jpg'" class="card-img-top" alt="Imagen no disponible">
@@ -37,7 +37,9 @@
           [erreskatatua]="selectErreskatatua"
           [indizea]="indizea"
           [opcion]="opcion"
-          (actualizarLista)="cargarLista()">
+          [lastID]="ultimoID"
+          (actualizarLista)="cargarLista()"
+          (cerrarModal)="closeModal()">
         </app-form-alta-eguneraketa>
       </div>
     </div>

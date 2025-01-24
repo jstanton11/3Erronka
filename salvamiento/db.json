@@ -83,7 +83,7 @@
   ],
   "erreskatatuak": [
     {
-      "id": 1,
+      "id": "1",
       "erreskate_id": 1,
       "izen_osoa": "Amina Diouf",
       "argazkia": "assets/img/mujer01.png",
@@ -93,7 +93,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 2,
+      "id": "2",
       "erreskate_id": 1,
       "izen_osoa": "Mamadou Cisse",
       "argazkia": "assets/img/hombre01.png",
@@ -103,7 +103,7 @@
       "balorazio_medikoa": "Deshidratatuta"
     },
     {
-      "id": 3,
+      "id": "3",
       "erreskate_id": 2,
       "izen_osoa": "Fatoumata Koné",
       "argazkia": "assets/img/mujer02.png",
@@ -113,7 +113,7 @@
       "balorazio_medikoa": "Desnutrituta"
     },
     {
-      "id": 4,
+      "id": "4",
       "erreskate_id": 2,
       "izen_osoa": "Ibrahim Diallo",
       "argazkia": "assets/img/hombre02.png",
@@ -123,7 +123,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 5,
+      "id": "5",
       "erreskate_id": 3,
       "izen_osoa": "Mariama Traoré",
       "argazkia": "assets/img/mujer03.png",
@@ -133,7 +133,7 @@
       "balorazio_medikoa": "Deshidratatuta"
     },
     {
-      "id": 6,
+      "id": "6",
       "erreskate_id": 3,
       "izen_osoa": "Oumar Sissoko",
       "argazkia": "assets/img/hombre03.png",
@@ -143,7 +143,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 7,
+      "id": "7",
       "erreskate_id": 4,
       "izen_osoa": "Kadidia Sangaré",
       "argazkia": "assets/img/mujer04.png",
@@ -153,7 +153,7 @@
       "balorazio_medikoa": "Desnutrituta"
     },
     {
-      "id": 8,
+      "id": "8",
       "erreskate_id": 4,
       "izen_osoa": "Moussa Konaté",
       "argazkia": "assets/img/hombre04.png",
@@ -163,7 +163,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 9,
+      "id": "9",
       "erreskate_id": 5,
       "izen_osoa": "Fatim Sidibé",
       "argazkia": "assets/img/mujer05.png",
@@ -173,7 +173,7 @@
       "balorazio_medikoa": "Deshidratatuta"
     },
     {
-      "id": 10,
+      "id": "10",
       "erreskate_id": 5,
       "izen_osoa": "Abdoulaye Doumbia",
       "argazkia": "assets/img/hombre05.png",
@@ -183,7 +183,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 11,
+      "id": "11",
       "erreskate_id": 6,
       "izen_osoa": "Adama Coulibaly",
       "argazkia": "assets/img/mujer06.png",
@@ -193,7 +193,7 @@
       "balorazio_medikoa": "Deshidratatuta"
     },
     {
-      "id": 12,
+      "id": "12",
       "erreskate_id": 6,
       "izen_osoa": "Sekouba Bah",
       "argazkia": "assets/img/hombre06.png",
@@ -203,7 +203,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 13,
+      "id": "13",
       "erreskate_id": 7,
       "izen_osoa": "Hawa Keita",
       "argazkia": "assets/img/mujer07.png",
@@ -213,7 +213,7 @@
       "balorazio_medikoa": "Desnutrituta"
     },
     {
-      "id": 14,
+      "id": "14",
       "erreskate_id": 7,
       "izen_osoa": "Boubacar Traoré",
       "argazkia": "assets/img/hombre07.png",
@@ -223,7 +223,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 15,
+      "id": "15",
       "erreskate_id": 8,
       "izen_osoa": "Kadiatou Diallo",
       "argazkia": "assets/img/mujer08.png",
@@ -233,7 +233,7 @@
       "balorazio_medikoa": "Deshidratatuta"
     },
     {
-      "id": 16,
+      "id": "16",
       "erreskate_id": 8,
       "izen_osoa": "Mohamed Camara",
       "argazkia": "assets/img/hombre08.png",
@@ -243,7 +243,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 17,
+      "id": "17",
       "erreskate_id": 9,
       "izen_osoa": "Salimata Doumbia",
       "argazkia": "assets/img/mujer09.png",
@@ -253,7 +253,7 @@
       "balorazio_medikoa": "Deshidratatuta"
     },
     {
-      "id": 18,
+      "id": "18",
       "erreskate_id": 9,
       "izen_osoa": "Ibrahima Sow",
       "argazkia": "assets/img/hombre09.png",
@@ -263,7 +263,7 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 19,
+      "id": "19",
       "erreskate_id": 10,
       "izen_osoa": "Khadija Barry",
       "argazkia": "assets/img/mujer10.png",
@@ -273,123 +273,43 @@
       "balorazio_medikoa": "Desnutrituta"
     },
     {
-      "id": 20,
+      "id": "20",
       "erreskate_id": 10,
-      "izen_osoa": "Amadou Touré",
+      "izen_osoa": "Mamadou Diallo",
       "argazkia": "assets/img/hombre10.png",
-      "adina": 39,
+      "adina": 30,
       "sexua": "G",
-      "jatorria": "Mali",
+      "jatorria": "Burkina Faso",
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "Ane Goikuria",
+      "id": "",
+      "erreskate_id": "2",
+      "izen_osoa": "Arees",
       "argazkia": "",
-      "adina": 22,
-      "sexua": "E",
-      "jatorria": "amorebieta",
-      "balorazio_medikoa": "Osasuntsu"
-    },
-    {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "Ane Goikuria",
-      "argazkia": "",
-      "adina": 22,
-      "sexua": "E",
-      "jatorria": "amorebieta",
-      "balorazio_medikoa": "Osasuntsu"
-    },
-    {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "Ane Goikuria",
-      "argazkia": "",
-      "adina": 22,
-      "sexua": "E",
-      "jatorria": "amorebieta",
-      "balorazio_medikoa": "Osasuntsu"
-    },
-    {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "Ane Goikuria",
-      "argazkia": "",
-      "adina": 22,
-      "sexua": "E",
-      "jatorria": "amorebieta",
-      "balorazio_medikoa": "Osasuntsu"
-    },
-    {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "Ane Goikuria",
-      "argazkia": "",
-      "adina": 22,
-      "sexua": "E",
-      "jatorria": "amorebieta",
-      "balorazio_medikoa": "Osasuntsu"
-    },
-    {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "Ane Goikuria",
-      "argazkia": "",
-      "adina": 22,
-      "sexua": "E",
-      "jatorria": "amorebieta",
-      "balorazio_medikoa": "Osasuntsu"
-    },
-    {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "Ane Goikuria",
-      "argazkia": "",
-      "adina": 22,
-      "sexua": "E",
-      "jatorria": "amorebieta",
-      "balorazio_medikoa": "Osasuntsu"
-    },
-    {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "Ares",
-      "argazkia": "",
-      "adina": 4,
+      "adina": 78,
       "sexua": "G",
-      "jatorria": "usenas",
+      "jatorria": "algggg",
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "aresito",
+      "id": "",
+      "erreskate_id": "2",
+      "izen_osoa": "Arees",
       "argazkia": "",
-      "adina": 5,
+      "adina": 767,
       "sexua": "G",
-      "jatorria": "usenas",
+      "jatorria": "algggg",
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "aresito",
+      "id": "",
+      "erreskate_id": "2",
+      "izen_osoa": "Arees",
       "argazkia": "",
-      "adina": 5,
+      "adina": 767,
       "sexua": "G",
-      "jatorria": "usenas",
-      "balorazio_medikoa": "Osasuntsu"
-    },
-    {
-      "id": 0,
-      "erreskate_id": 0,
-      "izen_osoa": "aresitooo",
-      "argazkia": "",
-      "adina": 2,
-      "sexua": "G",
-      "jatorria": "Gineaaa",
+      "jatorria": "algggg",
       "balorazio_medikoa": "Osasuntsu"
     }
   ]

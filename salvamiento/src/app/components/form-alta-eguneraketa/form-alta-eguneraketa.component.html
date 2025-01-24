@@ -54,11 +54,34 @@
 <section *ngIf="opcion === 'create'">
   <form *ngIf="erreskatatua">
     <div style="display:none">
-      <img [src]="erreskatatua.argazkia ? erreskatatua.argazkia : 'assets/img/desconocido.jpg'" alt="">
+      <img [src]="erreskatatua.argazkia ? erreskatatua.argazkia : 'assets/img/desconocido.jpg'" alt="" [(ngModel)]="erreskatatua.argazkia">
     </div>
+
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">ID:</label>
+      <input type="text" id="disabledTextInput" class="form-control" [(ngModel)]="erreskatatua.id" value={{lastID}} name="id" readonly>
+    </div>
+
     <div class="mb-3">
       <label for="izenOsoa" class="form-label">Izen Osoa:</label>
       <input type="text" id="izenOsoa" class="form-control" placeholder="Idatzi hemen izen osoa" [(ngModel)]="erreskatatua.izen_osoa" name="izen_osoa">
+    </div>
+
+    <div class="mb-3">
+      <label for="erreskate_id" class="form-label">Erreskatea:</label>
+      <select id="erreskate_id" type="number" class="form-select" [(ngModel)]="erreskatatua.erreskate_id" name="erreskate_id">
+        <option value="" disabled selected>Aukeratu bat</option>
+        <option value= 1>Alboran Itsasoa</option>
+        <option value= 2>Gibraltar Itsasartea</option>
+        <option value= 3>Libiako Kosta</option>
+        <option value= 4>Grezia uharteak</option>
+        <option value= 5>Aljeriako Kosta</option>
+        <option value= 6>Joniko Itsasoa</option>
+        <option value= 7>Siziliako Kanala</option>
+        <option value= 8>Adriatiko Itsasoa</option>
+        <option value= 9>Sidra Golkoa</option>
+        <option value= 10>Mesinako itsasartea</option>
+      </select>
     </div>
 
     <div class="mb-3">
@@ -81,8 +104,8 @@
     </div>
 
     <div class="mb-3">
-      <label for="balorazioMedikoa" class="form-label">Balorazio Medikoa:</label>
-      <select id="balorazioMedikoa" class="form-select" placeholder="Idatzi hemen balorazio medikoa" [(ngModel)]="erreskatatua.balorazio_medikoa" name="balorazio_medikoa">
+      <label for="balorazio_medikoa" class="form-label">Balorazio Medikoa:</label>
+      <select id="balorazio_medikoa" class="form-select" placeholder="Idatzi hemen balorazio medikoa" [(ngModel)]="erreskatatua.balorazio_medikoa" name="balorazio_medikoa">
         <option value="" disabled selected>Aukeratu bat</option>
         <option value="Osasuntsu">Osasuntsu</option>
         <option value="Deshidratatuta">Deshidratatuta</option>

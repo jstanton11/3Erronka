@@ -8,10 +8,12 @@ import { ServiceService } from './../../services/service.service';
   styleUrls: ['./form-alta-eguneraketa.component.scss']
 })
 export class FormAltaEguneraketaComponent implements OnInit {
-  @Input() erreskatatua: Erreskatatuak = {erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
+  @Input() erreskatatua: Erreskatatuak = {id: "" , erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
   @Input() indizea: number = 0;
   @Input() opcion: string = 'create';
+  @Input() lastID: string = '';
   @Output() actualizarLista = new EventEmitter<void>();
+  @Output() cerrarModal = new EventEmitter<boolean>();
   @ViewChild('exampleModal', { static: false }) modal!: ElementRef;
 
   constructor(private ServiceService: ServiceService) {}
@@ -45,8 +47,7 @@ export class FormAltaEguneraketaComponent implements OnInit {
   }
 
   closeModal() {
-    const modalElement = this.modal.nativeElement;
-    (modalElement as any).modal('hide');
+    this.cerrarModal.emit();
   }
 }
 
