@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./kontaktua.component.scss']
 })
 export class KontaktuaComponent {
+  //Bariableak
   izena: string = '';
   abizena: string = '';
   email: string = '';
   nota: string = '';
   iradokizuna: string = '';
 
+  //Formularioa balidatzeko metodoa
   onSubmit(kontaktuaForm: any): void {
     if (kontaktuaForm.valid) {
       alert('Formulario bidali da!');

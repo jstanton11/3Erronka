@@ -1,6 +1,11 @@
+
 <section>
   <h1>ERRESKATATUAK</h1>
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="ultimoId()">ERREGISTRATU</button>
+  <div class="erregistratuDiv">
+    <button type="button" class="btn btn-primary erregistratu" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="ultimoId()">ERREGISTRATU</button>
+  </div>
+
+  <!-- Erreskatatu bakoitzaren card-a -->
   <article *ngIf="registroakDaude(); else registroGabe">
     <div *ngFor="let erreskatatua of erreskatatuak; let i = index" class="card" style="width: 18rem;">
       <img [src]="erreskatatua.argazkia ? erreskatatua.argazkia : 'assets/img/desconocido.jpg'" class="card-img-top" alt="Imagen no disponible">
@@ -13,8 +18,10 @@
           <p>Jatorria: {{erreskatatua.jatorria}}</p>
           <p>Balorazio medikoa: {{erreskatatua.balorazio_medikoa}}</p>
         </details>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="updateErreskatatua(erreskatatua)" (click)="bidaliIndizea(i)">EGUNERATU</button>
-        <button (click)="baja(erreskatatua)">EZABATU</button>
+        <div class="botoiak">
+          <button type="button" class="btn btn-primary eguneratu" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="updateErreskatatua(erreskatatua)" (click)="bidaliIndizea(i)">EGUNERATU</button>
+          <button (click)="baja(erreskatatua)" class="btn ezabatu">EZABATU</button>
+        </div>
       </div>
     </div>
   </article>
@@ -24,7 +31,7 @@
   <p>Ez daude registroak</p>
 </ng-template>
 
-<!-- Modal -->
+<!-- Modala -->
 <div class="modal fade" id="exampleModal" #exampleModal tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

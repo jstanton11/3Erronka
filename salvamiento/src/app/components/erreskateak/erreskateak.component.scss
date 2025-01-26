@@ -3,6 +3,7 @@ $primary:  #002F6C ;
 $secondary: #D0021B;
 $tertiary: #4A90E2;
 
+//Estilo orokorra
 section{
  justify-content: center;
 }
@@ -14,6 +15,7 @@ article{
   justify-content: center;
 }
 
+//Textuen estiloa
 h1 {
   font-size: 50px;
   font-family: Marcellus;
@@ -35,6 +37,7 @@ p {
   font-size: 18px;
 }
 
+//CARD-ak
 .card {
   flex: 0 0 calc(20% - 20px);
   max-width: calc(20% - 20px);
@@ -53,6 +56,7 @@ p {
   flex-direction: column;
 }
 
+//Detaileen estiloa
 details{
   margin-top: auto;
 }
@@ -110,6 +114,7 @@ details p {
   padding-top: 1rem;
 }
 
+//PANTAILA TXIKIENTZAKO ESTILO ALDAKETAK
 @media (max-width: 1480px) {
   .card {
     flex: 0 0 calc(25% - 20px);

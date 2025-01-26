@@ -3,10 +3,12 @@ $primary:  #002F6C ;
 $secondary: #D0021B;
 $tertiary: #4A90E2;
 
+//Estilo orokorra
 section{
  justify-content: center;
 }
 
+//Botoiaren estiloa
 article{
   display: flex;
   flex-wrap: wrap;
@@ -14,6 +16,7 @@ article{
   justify-content: center;
 }
 
+//Letren estiloa
 h1 {
   font-size: 50px;
   font-family: Marcellus;
@@ -35,6 +38,7 @@ p {
   font-size: 18px;
 }
 
+//CARD-ak
 .card {
   flex: 0 0 calc(20% - 20px);
   max-width: calc(20% - 20px);
@@ -53,6 +57,56 @@ p {
   flex-direction: column;
 }
 
+.erregistratuDiv{
+  width: 100%;
+  text-align: center;
+}
+
+//Botoien estiloa
+.botoiak{
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-family: Marcellus;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  min-width: 80px;
+  height: 40px;
+  opacity: 1;
+  filter: none;
+  box-shadow: none;
+  margin: 5px;
+  &.erregistratu{
+    background-color: $primary !important;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &.eguneratu{
+    background-color: $primary !important;
+    font-size: 15px;
+  }
+  &.ezabatu{
+    background-color: $secondary !important;
+    font-size: 15px;
+  }
+}
+
+//Modalaren estiloa
+.modal-header{
+  height: 80px;
+
+  &h1{
+    font-size: 70px !important;
+  }
+
+}
+
+//Detaileen estiloa
 details{
   margin-top: auto;
 }
@@ -110,6 +164,7 @@ details p {
   padding-top: 1rem;
 }
 
+//PANTAILA TXIKIENTZAKO ESTILO ALDAKETAK
 @media (max-width: 1480px) {
   .card {
     flex: 0 0 calc(25% - 20px);
@@ -128,6 +183,19 @@ details p {
   .card {
     flex: 0 0 calc(50% - 20px);
     max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 680px) {
+  .eguneratu, .ezabatu{
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .eguneratu, .ezabatu{
+    height: 30px;
+    font-size: 10px !important;
   }
 }
 

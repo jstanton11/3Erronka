@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./erreskateak.component.scss']
 })
 export class ErreskateakComponent {
-  erreskateak: any;
+  erreskateak: any
+  //Konstruktorea
   constructor(private ServiceService: ServiceService) {
     this.ServiceService.getErreskateak().subscribe(data => {
       this.erreskateak = data

@@ -7,11 +7,12 @@ declare var bootstrap: any;
   styleUrls: ['./hasiera.component.scss']
 })
 export class HasieraComponent implements AfterViewInit{
+  //Carousel-aren argazkiak automatikoki aldatzeko metodoa
   ngAfterViewInit(): void {
     const carouselElement = document.querySelector('#carousel');
     if (carouselElement) {
       new bootstrap.Carousel(carouselElement, {
-        interval: 3000, // Cambia la duración entre slides
+        interval: 3000,
         ride: 'carousel'
       });
     }

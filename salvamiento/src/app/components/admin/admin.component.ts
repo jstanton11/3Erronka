@@ -9,6 +9,7 @@ import { FormAltaEguneraketaComponent } from "../form-alta-eguneraketa/form-alta
   styleUrls: ['./admin.component.scss'],
 })
 export class AdminComponent {
+  //Bariableak
   erreskatatuak: Erreskatatuak[] = [];
   selectErreskatatua: Erreskatatuak = {id: '', erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
   indizea: number = 0;
@@ -18,90 +19,63 @@ export class AdminComponent {
   constructor(private ServiceService: ServiceService) {
     this.ServiceService.getErreskatatuak().subscribe(data => {
       this.erreskatatuak = data;
+      console.log("data:" + data)
       console.log(this.erreskatatuak);
     });
 
   }
 
+  //METODOAK
+  //Erreskatatua aldatzeko metodoa
   updateErreskatatua(erreskatatua: Erreskatatuak) {
     this.selectErreskatatua = erreskatatua;
     this.opcion = 'update';
   }
 
+  //Indizea bidaltzeko metodoa
   bidaliIndizea(i: number): void {
     this.indizea = i;
   }
 
+  //Erreskatatua ezabatzeko metodoa
   baja(erreskatatua: Erreskatatuak) {
-    this.ServiceService.bajaErreskatatuak(erreskatatua).subscribe(() => {
+    if(confirm("Seguru erreskatatua ezabatu nahi duzula?")){
+      this.ServiceService.bajaErreskatatuak(erreskatatua).subscribe(() => {
       this.erreskatatuak = this.erreskatatuak.filter((t: Erreskatatuak) => t.id !== erreskatatua.id);
-      alert('Erreskatatua ezabatua');
-    });
+      });
+    }
   }
 
+  //Erreskatatuak daudela egiaztatzeko metodoa
   registroakDaude() {
     return this.erreskatatuak.length > 0;
   }
 
+  //Erreakatatuak kargatzeko metodoa
   cargarLista() {
     this.ServiceService.getErreskatatuak().subscribe(data => {
       this.erreskatatuak = data; // Actualiza la lista
     });
   }
 
+  //Modal-a ixteko metodoa
   closeModal() {
     const botonCerrar = document.querySelector("[data-bs-dismiss]");
     (botonCerrar as HTMLElement)?.click();
   }
 
+  //Azken ID-a lortzeko metodoa
   ultimoId(): void {
     console.log("ultimiID");
     this.ServiceService.getErreskatatuak().subscribe(data => {
       this.erreskatatuak = data;
-      console.log(this.erreskatatuak);
+      console.log("Erreskatatuak:" + this.erreskatatuak);
+      console.log("length: "+this.erreskatatuak.length)
     });
-    // if (this.erreskatatuak && this.erreskatatuak.length > 0) {
-      // Obtiene el último ID como string
       const ultimoIdString = this.erreskatatuak[this.erreskatatuak.length - 1]?.id ?? "0";
-
-      // Extrae el número del string (suponiendo que contiene solo un número)
       const ultimoIdNumero = parseInt(ultimoIdString, 10) || 0;
-
-      // Incrementa el número y lo convierte de nuevo a string
       this.ultimoID = (ultimoIdNumero + 1).toString();
       console.log(this.ultimoID);
-    // } else {
-    //   // Si el array está vacío, asigna "1" como ID inicial
-    //   this.ultimoID = "1";
-    // }
   }
 }
 
-// export class AdminComponent {
-//   erreskatatuak: any;
-//   url: string = "";
-//   erreskatatua: Erreskatatuak = {id: 0, erreskate_id: 0, izen_osoa: '', argazkia: '', adina: 0, sexua: '', jatorria: '', balorazio_medikoa: ''};
-//   selectErreskatatua: any;
-//   indizea: any;
-
-//   constructor(private ServiceService: ServiceService) {
-//     this.erreskatatuak = [];
-//     this.ServiceService.getErreskatatuak().subscribe(data => {
-//       this.erreskatatuak = data
-//     });
-// }
-
-// prepareEguneratu(indizea: number, erreskatatua: any): void {
-//   this.indizea = indizea;
-//   this.selectErreskatatua = erreskatatua;
-// }
-
-
-// baja(erreskatatua : Erreskatatuak){
-//   this.ServiceService.bajaErreskatatuak(erreskatatua).subscribe(()=> (this.erreskatatuak = this.erreskatatuak.filter((t:Erreskatatuak) => t.id !== erreskatatua.id)));
-// }
-
-// registroakDaude(){
-//   return true;
-// }
-// }

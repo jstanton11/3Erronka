@@ -1,0 +1,61 @@
+//Kolore nagusiak
+$primary:  #002F6C ;
+$secondary: #D0021B;
+$tertiary: #4A90E2;
+
+section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+//Botoiaren estiloa
+.btn {
+  background-color: $secondary !important;
+  justify-self: center;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  width: 200px;
+  min-width: 100px;
+  height: 40px;
+  opacity: 1;
+  filter: none;
+  box-shadow: none;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border : none;
+}
+
+//GALDETEGIA
+.galdetegia {
+  display: grid;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 100%;
+  width: 80%;
+}
+
+//Etiketaren estiloa
+.form-label{
+  font-size: 18px;
+}
+
+//Sarrera eta testu-arearen diseinua
+input, textarea, select{
+  border: solid 2px $tertiary;
+  height: 35px;
+  &:hover{
+    box-shadow: 0 0 13px $tertiary ;
+    border-color: $primary;
+  }
+  &:focus{
+    background-color: #fff;
+    border-color: $primary;
+    outline: none;
+    box-shadow: 0 0 13px $tertiary ;
+    scale: 1.1;
+  }
+}
+

@@ -99,7 +99,7 @@
       "argazkia": "assets/img/hombre01.png",
       "adina": 35,
       "sexua": "G",
-      "jatorria": "Mali",
+      "jatorria": "Malii",
       "balorazio_medikoa": "Deshidratatuta"
     },
     {
@@ -109,7 +109,7 @@
       "argazkia": "assets/img/mujer02.png",
       "adina": 19,
       "sexua": "E",
-      "jatorria": "Gineaaa",
+      "jatorria": "Ginea",
       "balorazio_medikoa": "Desnutrituta"
     },
     {
@@ -283,33 +283,43 @@
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": "",
-      "erreskate_id": "2",
-      "izen_osoa": "Arees",
+      "id": "21",
+      "erreskate_id": "4",
+      "izen_osoa": "Iratxe Legina",
       "argazkia": "",
-      "adina": 78,
-      "sexua": "G",
-      "jatorria": "algggg",
+      "adina": 53,
+      "sexua": "E",
+      "jatorria": "Usenas",
+      "balorazio_medikoa": "Deshidratatuta"
+    },
+    {
+      "id": "22",
+      "erreskate_id": "9",
+      "izen_osoa": "Amaia Goikuria",
+      "argazkia": "",
+      "adina": 18,
+      "sexua": "E",
+      "jatorria": "Zornotza",
       "balorazio_medikoa": "Osasuntsu"
     },
     {
-      "id": "",
-      "erreskate_id": "2",
-      "izen_osoa": "Arees",
+      "id": "23",
+      "erreskate_id": "3",
+      "izen_osoa": "Doltza Aldama",
       "argazkia": "",
-      "adina": 767,
-      "sexua": "G",
-      "jatorria": "algggg",
-      "balorazio_medikoa": "Osasuntsu"
+      "adina": 19,
+      "sexua": "E",
+      "jatorria": "Gaiarta",
+      "balorazio_medikoa": "Desnutrituta"
     },
     {
-      "id": "",
+      "id": "24",
       "erreskate_id": "2",
-      "izen_osoa": "Arees",
+      "izen_osoa": "Ares",
       "argazkia": "",
-      "adina": 767,
+      "adina": 4,
       "sexua": "G",
-      "jatorria": "algggg",
+      "jatorria": "Usenas",
       "balorazio_medikoa": "Osasuntsu"
     }
   ]

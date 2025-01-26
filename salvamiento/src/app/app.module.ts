@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HasieraComponent } from './components/hasiera/hasiera.component';
 import { ErreskateakComponent } from './components/erreskateak/erreskateak.component';
 import { DonatuComponent } from './components/donatu/donatu.component';
@@ -34,7 +35,8 @@ import { FormAltaEguneraketaComponent } from './components/form-alta-eguneraketa
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
